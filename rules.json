@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "condition": {
+            "regexFilter": "^https://(?:dzen\\.ru|yandex\\.ru|zen\\.yandex\\.ru)/(?:\\?.*)?$",
+            "resourceTypes": ["main_frame"]
+        },
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "url": "https://ya.ru/"
+            }
+        }
+    }
+]
