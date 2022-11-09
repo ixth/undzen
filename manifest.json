@@ -1,0 +1,23 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+
+  "manifest_version": 3,
+  "name": "Undzen Yandex",
+  "version": "1.1",
+
+  "description": "Adds a redirect from yandex.ru to Yandex home page",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://yandex.ru/", "https://yandex.ru/?*", "https://dzen.ru/", "https://dzen.ru/?*", "https://zen.yandex.ru/" ],
+      "run_at": "document_end",
+      "js": ["undzen.js"]
+    }
+  ]
+
+}
